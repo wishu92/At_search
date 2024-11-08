@@ -47,8 +47,8 @@ footer {
 
 .header-container a {
     color:var(--pink-color);
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .header-list {
@@ -56,16 +56,16 @@ footer {
     justify-content: center;
     align-items: center;
 
-    gap: 50px;
 }
 
-.header-list li {
-    width: 100px;
-    height: 32px;
-
+.header-list li a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-list li {
+    padding: 0 20px;
 }
 
 .header-search {
@@ -86,12 +86,14 @@ footer {
     border-radius: 20px;
 
     padding: 0 10px;
+    cursor: text;
 }
 
 .header-search li:first-child  a {
     color: #e3e3e3;
     font-weight: 400;
     font-size: 14px;
+    cursor: text;
 }
 
 .header-search > li {
@@ -176,7 +178,7 @@ h2 {
     
 }
 
-h6 {
+h4 {
     font-size: 22px;
     color: var(--pink-color);
     font-weight: 600;
@@ -196,6 +198,10 @@ h6 {
     gap: 50px;
 }
 
+.title-array {
+    align-items: flex-start;
+}
+
 .popular-academic-text {
     display: flex;
     flex-direction: column;
@@ -204,14 +210,40 @@ h6 {
     flex-shrink: 0;
 }
 
-h4 {
+h6 {
     font-size: 18px;
     color: #7f7f7f;
 }
 
 .more-view {
-    width: 140px;
-    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.more-view p{
+    font-size: 16px;
+    color: #5c5c5c;
+    font-weight: 600;
+}
+
+.more-view-click {
+    width: 35px;
+    aspect-ratio: 1;
+    border: #787878 solid 2px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-view-click figure {
+    width: 24px;
+}
+
+.more-view-click:hover {
+    border: var(--accent-color) solid 2px;
 }
 
 .popular-academic-group {
@@ -251,4 +283,107 @@ h4 {
     font-weight: 600;
     color: var(--pink-color);
     font-size: 22px;
+}
+
+
+
+.best-selling-page {
+    /* height: 100vh; */
+    display: flex;
+    gap: 100px;
+}
+
+.best-selling-img-group {
+    background-color: var(--accent-color);
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+}
+
+.best-selling-text-gruop {
+    width: 100%;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.best-selling-books-size {
+    width: 220px;
+}
+
+.best-selling-books-lt,
+.best-selling-books-Rt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.best-selling-img-group li {
+    width: 250px;
+    height: 375px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 60px 10px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.best-selling-books-title {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+h7 {
+    color: #3c3c3c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.best-selling-books-title a {
+    width: 110px;
+    height: 22px;
+    
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.best-selling-books-title p{
+    font-size: 12px;
+    color: var(--accent-color);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-selling-books-title p:hover {
+    background-color: #FF6600;
+    color: #FFEFDD;
+
+    transition: 0.3s;
+}
+
+.admission-results-page {
+    padding: 100px 0;
+
 }
