@@ -385,5 +385,36 @@ h7 {
 
 .admission-results-page {
     padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
 
+.admission-results-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.admission-results-contents li {
+    width: 280px;
+    aspect-ratio: 1;
+    
+    border: 1px solid var(--accent-color);
+}
+
+.admission-results-contents li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.admission-results-contents figure {
+    width: 80px;
 }
