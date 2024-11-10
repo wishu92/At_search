@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+</head>
+    <style>
+
+:root {
+    --text-color: #2E2E2E;
+    --accent-color: #FF6600;
+    --pink-color: #FFEFDD;
+}
+
+
+
+
+.popular-academic-page {
+    height: 100vh;
+    padding: 150px;
+    
+    display: flex;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.title-array {
+    align-items: flex-start;
+}
+
+.popular-academic-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+    flex-shrink: 0;
+}
+
+h6 {
+    font-size: 18px;
+    color: #7f7f7f;
+}
+
+.more-view {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.more-view p{
+    font-size: 16px;
+    color: #5c5c5c;
+    font-weight: 600;
+}
+
+.more-view-click {
+    width: 30px;
+    aspect-ratio: 1;
+    border: #787878 solid 2px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-view .more-view-click figure {
+    width: 24px;
+}
+
+.more-view-click:hover {
+    border: var(--accent-color) solid 2px;
+}
+
+.popular-academic-group {
+    margin-top: 150px;
+}
+
+.front figure {
+    width: 250px;
+    height: 250px;
+}
+
+.front img {
+    border-radius: 20px;
+}
+
+.popular-academic-group ul {
+    width: 805px;
+    height: 515px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.popular-academic-group a {
+    position: relative;
+}
+
+.front p {
+    position: absolute;
+
+    bottom: 10%;
+    left: 10%;
+
+    font-weight: 600;
+    color: var(--pink-color);
+    font-size: 22px;
+}
+
+.back {
+    display: block;
+    width: 250px;
+    height: 250px;
+
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: var(--pink-color);
+}
+
+.back figure{
+    width: 50px;
+}
+
+.back p {
+    font-size: 16px;
+    color: var(--accent-color);
+}
+
+.back div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+h8 {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+
+
+    </style>
+<body>
+    <div class="popular-academic-group">
+        <ul>
+            <li class="flip">
+                <div class="card">
+                    <a class="front" href="">
+                        <figure>
+                            <img src="../IMG/AI학과.png" alt="AI학과">
+                        </figure>
+                        <p>AI학과</p>
+                    </a>
+                    <a class="back" href="">
+                        <figure>
+                            <img src="../IMG/AI학과icon.png" alt="AI학과">
+                        </figure>
+                        <div>
+                            <h8>AI학과</h8>
+                            <p>Pre-medical course</p>
+                        </div>
+                        <p>
+                            의학을 전공하기 위한 기초적인<br>
+                            학문을 배우는 학과입니다
+                        </p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img src="../IMG/컴퓨터학과.png" alt="컴퓨터학과">
+                    </figure>
+                    <p>컴퓨터학과</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img src="../IMG/반도체학과.png" alt="반도체학과">
+                    </figure>
+                    <p>반도체학과</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img src="../IMG/경영학과.png" alt="경영학과">
+                    </figure>
+                    <p>경영학과</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img src="../IMG/경제학과.png" alt="경제학과">
+                    </figure>
+                    <p>경제학과</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img src="../IMG/의예과.png" alt="의예과">
+                    </figure>
+                    <p>의예과</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+</body>
+</html>

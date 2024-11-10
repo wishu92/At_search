@@ -29,6 +29,7 @@ header {
 
 footer {
     padding: 0 32px;
+    background-color: var(--pink-color);
 }
 
 
@@ -72,6 +73,11 @@ footer {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.at-search-logo {
+    width: 120px;
+    display: block;
 }
 
 .header-search li:first-child {
@@ -228,7 +234,7 @@ h6 {
 }
 
 .more-view-click {
-    width: 35px;
+    width: 30px;
     aspect-ratio: 1;
     border: #787878 solid 2px;
     border-radius: 50px;
@@ -238,7 +244,7 @@ h6 {
     align-items: center;
 }
 
-.more-view-click figure {
+.more-view .more-view-click figure {
     width: 24px;
 }
 
@@ -400,8 +406,7 @@ h7 {
 .admission-results-contents li {
     width: 280px;
     aspect-ratio: 1;
-    
-    border: 1px solid var(--accent-color);
+
 }
 
 .admission-results-contents li a {
@@ -416,5 +421,65 @@ h7 {
 }
 
 .admission-results-contents figure {
-    width: 80px;
+    width: 70px;
+}
+
+.admission-results-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #5c5c5c;
+}
+
+.admission-results-more-view div {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.admission-results-more-view figure img {
+    color: var(--pink-color);
+}
+
+.footer-container {
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-container nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-container nav ul li {
+    padding: 5px 20px;
+}
+
+.footer-container nav ul a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5c5c5c;
+}
+
+hr {
+    width: 100%;
+    border: solid 0.5px #D2D2D2;
+
+}
+
+.footer-address p {
+    padding: 5px;
+    font-size: 16px;
+    color: #5c5c5c;
 }
