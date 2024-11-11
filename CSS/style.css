@@ -25,6 +25,7 @@ body > section {
 
 header {
     padding: 0 32px;
+    /* background-color: #ffffff; */
 }
 
 footer {
@@ -32,20 +33,15 @@ footer {
     background-color: var(--pink-color);
 }
 
+
+
 .header-container {
     width: 100%;
     margin: 0 auto;
-    /* position: absolute; */
-    /* body에 붙은상태 */
     
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.at-search-logo {
-    width: 120px;
-    display: block;
 }
 
 .header-list {
@@ -54,8 +50,12 @@ footer {
     align-items: center;
 }
 
+.at-search-logo {
+    width: 120px;
+    display: block;
+}
+
 .header-list li {
-    width: 100%;
     height: 60px;
 }
 
@@ -67,15 +67,14 @@ footer {
     align-items: center;
     padding: 0 20px;
     
-    color:#555;
-    font-size: 18px;
+    color: #444;
+    font-size: 20px;
     font-weight: 600;
-
 }
 
 .header-sub-list li {
-    background-color: #ff8f45;
-    border-bottom: 1px solid #4c4c4c;
+    background-color: #bcbcbc;
+    border-bottom: 1px solid #D2D2D2;
 }
 
 .header-sub-list {
@@ -85,11 +84,11 @@ footer {
 }
 
 .header-sub-list li a {
-    color: #787878;
+    font-size: 18px;
 }
 
-.header-list li:hover {
-    color: var(--accent-color);
+.header-list li:hover > a {
+   color: var(--accent-color);
 }
 
 .header-list li:hover .header-sub-list {
@@ -97,14 +96,12 @@ footer {
 }
 
 .header-sub-list li:hover {
-    background-color: #2a1203;
+    background-color: #c4c4c4;;
 }
 
 .header-sub-list li:hover > a{
-    color: var(--accent-color);
+    color: #f8f8f8;
 }
-
-
 
 .header-search {
     display: flex;
@@ -120,22 +117,21 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    border: 2px solid #FFEFDD;
+    border: 2px solid #ffaa71;
     border-radius: 20px;
-
-    padding: 0 10px;
     cursor: text;
 }
 
 .header-search li:first-child a {
-    color: #e3e3e3;
+    color: #c0c0c0;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     cursor: text;
 }
 
 .header-search figure {
     width: 24px;
+    cursor: pointer;
 }
 
 .branding-page {
@@ -217,18 +213,6 @@ h2 {
     transition: 0.5s;
 }
 
-.growcontent:hover {
-    flex-shrink: 0;
-    transition: 0.5s;
-} 
-
-.growcontent:hover
-h4 {
-    transition: 0.7;
-    bottom: 60%;
-    font-size: 30px;
-}
-
 h4 {
     font-size: 22px;
     color: var(--pink-color);
@@ -241,22 +225,50 @@ h4 {
 }
 
 .prospectus-goto {
+    width: 160px;
+    height: 50px;
     position: absolute;
     bottom: 10%;
-    right: 90%;
+    right: 10%;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
 }
 
 .prospectus-goto p {
     font-size: 20px;
     color: var(--pink-color);
+    font-weight: 600;
 }
 
 .prospectus-goto figure {
     width: 50px;
+    height: 50px;
 }
-  
+
+.growcontent:hover {
+    flex-shrink: 0;
+    transition: 0.5s;
+} 
+
+.growcontent:hover
+h4 {
+    transition: 0.7;
+    bottom: 50%;
+    font-size: 30px;
+}
+
+.growcontent:hover 
+.prospectus-goto {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
 .popular-academic-page {
     height: 100vh;
     padding: 150px;
@@ -273,13 +285,13 @@ h4 {
 .popular-academic-text {
     display: flex;
     flex-direction: column;
-  
-    gap: 50px;
+    gap: 20px;
     flex-shrink: 0;
 }
  
 h6 {
-    font-size: 18px;
+    margin-top: 50px;
+    font-size: 20px;
     color: #7f7f7f;
 }
  
@@ -309,11 +321,12 @@ h6 {
 .more-view .more-view-click figure {
     width: 24px;
 }
-  
-.more-view-click:hover {
+
+.more-view:hover
+.more-view-click {
     border: var(--accent-color) solid 2px;
 }
-  
+
 .popular-academic-group {
     margin-top: 150px;
 }
@@ -562,7 +575,7 @@ h5 {
 }
 
 .admission-results-contents li:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
     transition: 0.5s;
 }
 
