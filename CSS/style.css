@@ -11,9 +11,11 @@ body {
     font-style: normal;
     font-variation-settings:"wdth" 100;
 }
+
 a {
     text-decoration: none;
 }
+
 img {
     display: block;
     width: 100%;
@@ -42,6 +44,8 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
+    position: relative;
 }
 
 .header-list {
@@ -78,13 +82,16 @@ footer {
 }
 
 .header-sub-list {
-    height: 0;
+    height: 0;  
+    z-index: 1;
+    /* position속성과 짝꿍 */
+
     overflow: hidden;
     transition: 0.5s;
 }
 
 .header-sub-list li a {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .header-list li:hover > a {
@@ -135,25 +142,55 @@ footer {
 }
 
 .branding-page {
-    background-image: url(../IMG/Header_bg1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0;
 }
 
 .branding-container {
-    height: 100vh;
-    margin: 0 auto;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    text-align: center;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 70px;
     color: #FFEFDD;
-    /* 애니메이션할때 다시 하기 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    font-weight: 700;
 }
+
+.type-text-arr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.type-text-underline {
+    color: var(--accent-color);
+    font-size: 80px;
+    text-decoration: underline;
+}
+
+.type-text-box {
+    width: 300px;
+    height: 80px;
+    padding: 10px;
+    border: 5px, solid var(--accent-color);
+    border-radius: 20px;
+
+    color: var(--accent-color);
+    font-size: 80px;
+}
+
 
 .Prospectus-page {
     height: 100vh;
