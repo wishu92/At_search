@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>  
-
-<body>
-  <h1 class="type-text"></h1>
-  <h1 class="type-text"></h1>
-
-  <script>
     // 각 h1 요소에 대해 사용할 텍스트 배열
     let typeTextElements = document.querySelectorAll(".type-text");
     let textToBeTypedArrList = [
@@ -42,10 +28,11 @@
 
     async function displayTexts() {
         while (true) {
-            // 첫 번째 요소 타이핑
-            await typeText(typeTextElements[0], textToBeTypedArrList[0][index]);
-            // 두 번째 요소 타이핑
-            await typeText(typeTextElements[1], textToBeTypedArrList[1][index]);
+            // 두 요소에 동시에 텍스트를 타이핑
+            await Promise.all([
+                typeText(typeTextElements[0], textToBeTypedArrList[0][index]),
+                typeText(typeTextElements[1], textToBeTypedArrList[1][index])
+            ]);
 
             // 다음 텍스트 인덱스로 이동
             index = (index + 1) % textToBeTypedArrList[0].length;
@@ -54,7 +41,3 @@
 
     // 애니메이션 시작
     displayTexts();
-  </script>
-</body>
-
-</html>
