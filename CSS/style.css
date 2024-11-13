@@ -173,26 +173,24 @@ h1 {
     gap: 20px;
 }
 
-.type-text-underline {
-    color: var(--accent-color);
-    font-size: 80px;
-    text-decoration: underline;
-    text-underline-offset: 30px;
-}
-
-.type-text-box {
+.type-text {
     height: 80px;  
     padding: 20px;
     flex-grow: 1;
     /* 응원합니다. 자리가 보장됨. */
 
-    border: 8px, solid var(--accent-color);
-    border-radius: 20px;
-
     color: var(--accent-color);
     font-size: 80px;
 }
 
+.type-text-underline {
+    border-bottom : 8px solid var(--accent-color);
+}
+
+.type-text-box {
+    border: 8px, solid var(--accent-color);
+    border-radius: 20px;
+}
 
 .Prospectus-page {
     height: 100vh;
@@ -442,26 +440,32 @@ h8 {
 }
 
 .best-selling-page {
-    /* height: 100vh; */
     display: flex;
     gap: 100px;
 }
 
 .best-selling-img-group {
+    width: 50%;
+    flex-shrink: 0;
+    /* text 크기 때문에 줄어들지 않도록 보전시킴 */
     background-color: var(--accent-color);
-    width: 100%;
 
     display: flex;
     justify-content: end;
+    transition: transform 0.5s linear; /* 리니어 이동 추가 */
 }
 
-.best-selling-text-gruop {
-    width: 100%;
+.best-selling-text-group {
+    height: 100vh;
     padding-top: 100px;
 
     display: flex;
     flex-direction: column;
     gap: 50px;
+
+    position: sticky;
+    top: 0;
+
 }
 
 .best-selling-books-size {

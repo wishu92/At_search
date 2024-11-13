@@ -1,0 +1,15 @@
+/* 스크롤 트랜지션 효과 - 속도 변경 */
+.best-selling-img-group li {
+    opacity: 0;  /* 처음에 보이지 않도록 설정 */
+    transform: translateY(50px);  /* 살짝 아래로 이동해 시작 */
+    transition: opacity 0.6s linear, transform 0.6s linear; /* linear 속도로 트랜지션 */
+}
+
+.best-selling-img-group li.scroll-transition {
+    opacity: 1;
+    transform: translateY(0); /* 원래 위치로 이동 */
+}
+
+.best-selling-img-group {
+    transition: transform 0.6s linear;
+}
