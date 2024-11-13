@@ -150,20 +150,19 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
     text-align: center;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 80px;
     color: #FFEFDD;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 30px;
 
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .type-text-arr {
@@ -174,21 +173,23 @@ h1 {
 }
 
 .type-text {
-    height: 80px;  
+    height: 90px;  
     padding: 20px;
     flex-grow: 1;
     /* 응원합니다. 자리가 보장됨. */
 
-    color: var(--accent-color);
-    font-size: 80px;
+    text-shadow: 1px 1px 3px #2E2E2E;
+    color: var(--pink-color);
+    font-size: 90px;
+    font-weight: 800;
 }
 
 .type-text-underline {
-    border-bottom : 8px solid var(--accent-color);
+    border-bottom : 8px solid var(--pink-color);
 }
 
 .type-text-box {
-    border: 8px, solid var(--accent-color);
+    border: 8px, solid var(--pink-color);
     border-radius: 20px;
 }
 
@@ -200,7 +201,6 @@ h1 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .section-title-zone {
@@ -466,7 +466,7 @@ h8 {
     position: sticky;
     top: 0;
 
-}
+}s
 
 .best-selling-books-size {
     width: 220px;
