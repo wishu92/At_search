@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carousel</title>
+    <script src="JS/slider.js"></script>
+    <link rel="stylesheet" href="CSS/slider.css">
     <style>
         :root {
             --text-color: #2E2E2E;
@@ -34,56 +36,9 @@
             padding: 0 32px;
         }
 
-        /* Carousel Container */
-        .branding-page-background {
-            overflow: hidden;
-            width: 100%;
-            position: relative;
-        }
-
-        .carousel {
-            display: flex;
-            width: 400%; /* 4개의 이미지가 있으므로 */
-            animation: slide 16s linear infinite; /* 4초씩 4장, 총 16초 */
-        }
-
-        .carousel-item {
-            width: 100vw; /* 각 이미지가 화면 전체 너비에 맞춰짐 */
-            flex-shrink: 0;
-        }
-
-        /* Animation for sliding */
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            25% { transform: translateX(-100%); }
-            50% { transform: translateX(-200%); }
-            75% { transform: translateX(-300%); }
-            100% { transform: translateX(0); }
-        }
-
-        /* Branding Text */
-        .branding-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: var(--text-color);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        .type-text-underline {
-            text-decoration: underline;
-            color: var(--accent-color);
-        }
-
-        .type-text-box {
-            background-color: var(--pink-color);
-            padding: 0.1em 0.2em;
+        .my-slider {
+            width: 100%; 
+            height: 100vh;
         }
 
     </style>
@@ -91,41 +46,36 @@
 <body>
     <section class="branding-page">
         <div class="branding-page-background">
-            <ul class="carousel">
-                <li class="carousel-item">
+            <ul class="my-slider">
+                <li class="contents">
                     <figure>
                         <img src="IMG/Header_bg1.png" alt="">
                     </figure>
                 </li>
-                <li class="carousel-item">
+                <li class="contents">
                     <figure>
                         <img src="IMG/Header_bg2.png" alt="">
                     </figure>
                 </li>
-                <li class="carousel-item">
+                <li class="contents">
                     <figure>
                         <img src="IMG/Header_bg3.png" alt="">
                     </figure>
                 </li>
-                <li class="carousel-item">
+                <li class="contents">
                     <figure>
                         <img src="IMG/Header_bg4.png" alt="">
                     </figure>
                 </li>
             </ul>
-            <div class="branding-container">
-                <h1>
-                    <div class="type-text-arr">
-                        당신의 
-                        <p class="type-text type-text-underline">멋진</p>
-                    </div>
-                    <div class="type-text-arr">
-                        <p class="type-text type-text-box">열정을</p>
-                        응원합니다.
-                    </div>
-                </h1>
-            </div>
         </div>
     </section>
+
+    <script>
+        const mySlider = document.querySelector('.my-slider');
+
+        createSlider(mySlider, 1, 0, 300, true)
+        
+    </script>
 </body>
 </html>

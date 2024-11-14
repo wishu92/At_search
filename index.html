@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="CSS/scroll_fade_in.css">
-    <!-- <link rel="stylesheet" href="CSS/sicky.css"> -->
+
+    <link rel="stylesheet" href="CSS/slider.css">
+    <script src="JS/slider.js"></script>
 
 
 
@@ -78,23 +80,23 @@
 
     <section class="branding-page">
         <div class="branding-page-background">
-            <ul class="carousel">
-                <li class="carousel-item">
+            <ul class="my-slider">
+                <li class="contents">
                     <figure>
                         <img src="IMG/Header_bg1.png" alt="">
                     </figure>
                 </li>
-                <li>
+                <li class="contents">
                     <figure>
                         <img src="IMG/Header_bg2.png" alt="">
                     </figure>
                 </li>
-                <li>
+                <li class="contents">
                     <figure>
                         <img src="IMG/Header_bg3.png" alt="">
                     </figure>
                 </li>
-                <li>
+                <li class="contents">
                     <figure>
                         <img src="IMG/Header_bg4.png" alt="">
                     </figure>
@@ -723,9 +725,15 @@
         </div>
     </footer>
 
-
+        
     <script src="JS/scroll_fade_in.js"></script>
     <script src="JS/text_TypedArray.js"></script>
     <script src="JS/sticky.js"></script>
+    
+    <script>
+        const mySlider = document.querySelector('.my-slider');
+        createSlider(mySlider, 1, 0, 300, true)
+
+    </script>
 </body>
 </html>
