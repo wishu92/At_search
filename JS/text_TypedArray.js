@@ -4,7 +4,7 @@
         ["뜨거운", "아름다운", "무한한"],
         ["열정을", "꿈을", "앞날을"]
     ];
-    let totalAnimationTime = 3500; // 각 텍스트가 유지될 시간 (3초)
+    let totalAnimationTime = 3000; // 각 텍스트가 유지될 시간 (3초)
 
     let index = 0; // 현재 텍스트 인덱스
 
