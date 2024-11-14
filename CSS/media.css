@@ -1,0 +1,47 @@
+@media screen and (max-width:1400px) {
+    .growcontent {
+        width: 750px;
+        height: 450px;
+    }
+
+    .popular-academic-page {
+        height: 100%;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .growcontent {
+        width: 620px;
+        height: 400px;
+    }
+
+    .popular-academic-page {
+        gap: 40px;
+    }
+}
+@media screen and (max-width:1024px) {
+    body > section {
+        padding: 0 16px;
+    }
+    .popular-academic-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flip {
+        width: 250px;
+        height: 250px;
+    }
+
+    h3 {
+        font-size: 22px;
+        color: var(--accent-color);
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 40px;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+}
