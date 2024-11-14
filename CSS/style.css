@@ -10,19 +10,12 @@ body {
     font-weight: 500;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
-}
-
-img {
-    display: block;
-    width: 100%;
-}
-
-body > section {
-    padding: 0 32px;
 }
 
 header {
@@ -35,6 +28,18 @@ footer {
     background-color: var(--pink-color);
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
+body > section {
+    padding: 0 32px;
+}
+
+.noPadding {
+    padding: 0;
+}
 
 .header-container {
     width: 100%;
@@ -143,7 +148,35 @@ footer {
 .branding-page {
     width: 100%;
     padding: 0;
+    overflow: hidden;
 }
+
+/* 메인화면 slider */
+
+.sbs-slider-container {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 28px;
+}
+
+.sbs-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sbs-content-wrapper {
+    display: flex;
+    transition: 0.5s;
+    height: 100%;
+}
+
+.sbs-content {
+    height: 100%;
+    flex-shrink: 0;
+}
+
+/* 메인화면 slider */
 
 .my-slider {
     width: 100%; 
@@ -160,14 +193,14 @@ footer {
 
 h1 {
     font-size: 80px;
-    color: #FFEFDD;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
 
-    font-weight: 300;
+    font-weight:800;
 }
 
 .type-text-arr {
@@ -183,18 +216,18 @@ h1 {
     flex-grow: 1;
     /* 응원합니다. 자리가 보장됨. */
 
-    text-shadow: 1px 1px 3px #2E2E2E;
-    color: var(--pink-color);
+    /* text-shadow: 1px 1px 3px #2E2E2E; */
+    color: var(--accent-color);
     font-size: 90px;
     font-weight: 800;
 }
 
 .type-text-underline {
-    border-bottom : 8px solid var(--pink-color);
+    border-bottom : 8px solid var(--accent-color);
 }
 
 .type-text-box {
-    border: 8px, solid var(--pink-color);
+    border: 8px, solid var(--accent-color);
     border-radius: 20px;
 }
 

@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
-    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/cardflip.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="CSS/scroll_fade_in.css">
-    <link rel="stylesheet" href="CSS/cardflip.css">
+
+    <link rel="stylesheet" href="CSS/slider.css">
+    <script src="JS/slider.js"></script>
+
+
+
 </head>
 
 <body>
@@ -73,7 +79,7 @@
     </header>
 
     <section class="branding-page">
-        <!-- <div class="branding-page-background"> -->
+        <div class="branding-page-background">
             <ul class="my-slider">
                 <li class="contents">
                     <figure>
@@ -112,7 +118,7 @@
                 </div>
                 </h1>
             </div>
-        <!-- </div> -->
+        </div>
     </section>
 
 
@@ -362,7 +368,7 @@
     </section>
 
 
-    <section class="noPadding">
+    <section>
         <div class="best-selling-page">
             <div class="best-selling-img-group">
                 <ul class="best-selling-books-lt">
@@ -722,11 +728,11 @@
         
     <script src="JS/scroll_fade_in.js"></script>
     <script src="JS/text_TypedArray.js"></script>
-    <script src="JS/slider.js"></script>
+    <!-- <script src="JS/sticky.js"></script> -->
 
     <script>
         const mySlider = document.querySelector('.my-slider');
-        createSlider(mySlider, 1, 0, 300, true);
+        createSlider(mySlider, 1, 0, 300, true)
 
     </script>
 </body>
