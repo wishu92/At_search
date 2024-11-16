@@ -301,6 +301,19 @@
         height: 24px;
     }
 
+    h6 {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .more-view p{
+        font-size: 14px;
+    }
+
+    .more-view-click {
+        width: 28px;
+    }
+
     .admission-results-contents {
         flex-wrap: wrap;
     }
@@ -451,7 +464,45 @@
 
     h3 {
         font-size: 18px;
+        text-align: center;
     }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .growcontent:hover
+    h4 {
+        font-size: 20px;
+    }
+
+    .prospectus-goto {
+        width: 80px;
+        height: 24px;
+    }
+    
+    .prospectus-goto p {
+        font-size: 10px;
+    }
+    
+    .prospectus-goto figure {
+        width: 16px;
+        height: 16px;
+    }
+
+    h6 {
+        margin-top: 20px;
+        font-size: 14px;
+    } 
+
+    .more-view p{
+        font-size: 12x;
+    }
+
+    .more-view-click {
+        width: 24px;
+    }
+
 
     .admission-results-contents li {
         width: 150px;
