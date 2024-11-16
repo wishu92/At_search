@@ -321,12 +321,21 @@
         padding: 0 16px;
     }
 
+    .at-search-logo {
+        padding: 10px;
+    }
+
     .footer-container nav ul {
         flex-wrap: wrap;
     }
 
-    .footer-container nav {
+    .footer-container nav ul a,
+    .footer-address p {
         font-size: 14px;
+    }
+
+    .footer-container nav ul li {
+        padding: 5px 10px;
     }
 
 }
@@ -398,6 +407,36 @@
 }
 
 @media screen and (max-width:360px) {
+
+    .admission-results-contents li {
+        width: 150px;
+        aspect-ratio: 1;
+    }
+
+    .admission-results-contents li a {
+        min-width: 150px;;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .admission-results-page {
+        gap: 40px;
+    }
+
+    .admission-results-contents a > figure {
+        width: 50px;
+    }
+
+    .detail-view p {
+        font-size: 14px;
+    }
+
+    .footer-container nav ul a,
+    .footer-address p {
+        font-size: 12px;
+    }
 
 
 }
