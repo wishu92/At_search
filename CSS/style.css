@@ -272,6 +272,11 @@ h2 {
     font-size: 40px;
     color: var(--text-color);
     font-weight: 600;
+    /* text-align: center; */
+}
+
+.prospectus-title-br {
+    display: none;
 }
 
 .prospectus-img-group {
@@ -514,7 +519,7 @@ h8 {
     position: sticky;
     top: 0;
 
-}s
+}
 
 .best-selling-books-size {
     width: 220px;

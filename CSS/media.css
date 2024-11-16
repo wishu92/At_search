@@ -407,6 +407,51 @@
 }
 
 @media screen and (max-width:360px) {
+    h1 {
+        font-size: 40px;
+        gap:20px;
+    }
+    
+    .type-text-arr {
+        gap: 10px;
+    }
+    
+    .type-text {
+        height: 40px;  
+        padding: 10px;
+        font-size: 40px;
+    }
+    
+    .type-text-underline {
+        border-bottom : 6px solid var(--accent-color);
+    }
+    
+    .type-text-box {
+        border: 6px, solid var(--accent-color);
+        border-radius: 20px;
+    }
+
+    .branding-container .type-text-arr:last-child {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .prospectus-page {
+        gap: 80px;
+    }
+
+    .prospectus-title-br {
+        display: block;
+    }
+    
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
 
     .admission-results-contents li {
         width: 150px;
@@ -438,5 +483,7 @@
         font-size: 12px;
     }
 
+    
+    
 
 }
