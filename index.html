@@ -61,11 +61,9 @@
 
             <ul class="header-search">
                 <li>
-                    <a href="#">연세대학교 등급컷</a>
+                    <input class="header-search-box" type="text">
                     <a href="#">
-                        <figure>
-                            <img src="IMG/search_icon.svg" alt="search-icon">
-                        </figure>
+                        <img src="IMG/search_icon.svg" alt="search-icon">
                     </a>
                 </li>
                 <li>
@@ -147,7 +145,7 @@
                 </h2>
             </div>
             <div class="prospectus-img-group"> 
-                <a class="growcontent fadein fade to-left" href="">
+                <div class="growcontent fadein fade to-left">
                     <figure>
                         <img src="IMG/prospectus_img1.png" alt="수시모집이미지">
                     </figure>
@@ -155,16 +153,16 @@
                         수시모집요강 <br>
                         Early admissions
                     </h4>
-                    <div class="prospectus-goto">
+                    <a class="prospectus-goto" href="#">
                         <p>
                             바로가기
                         </p>
-                        <figure>
+                        <span>
                             <img src="IMG/바로가기icon.svg" alt="바로가기">
-                        </figure>
-                    </div>
-                </a>
-                <a class="growcontent fadein fade to-bottom" href="">
+                        </span>
+                    </a>
+                </div>
+                <div class="growcontent fadein fade to-bottom">
                     <figure>
                         <img src="IMG/prospectus_img2.png" alt="정시모집이미지">
                     </figure>
@@ -172,16 +170,16 @@
                         정시모집요강 <br>
                         Regular admissions
                     </h4>
-                    <div class="prospectus-goto">
+                    <a class="prospectus-goto" href="#">
                         <p>
                             바로가기
                         </p>
-                        <figure>
+                        <span>
                             <img src="IMG/바로가기icon.svg" alt="바로가기">
-                        </figure>
-                    </div>
-                </a>
-                <a class="growcontent fadein fade to-right" href="">
+                        </span>
+                    </a>
+                </div>
+                <div class="growcontent fadein fade to-right">
                     <figure>
                         <img src="IMG/prospectus_img3.png" alt="편입이미지">
                     </figure>
@@ -189,15 +187,15 @@
                         편입모집요강 <br>
                         Trnasfer admissions
                     </h4>
-                    <div class="prospectus-goto">
+                    <a class="prospectus-goto" href="#">
                         <p>
                             바로가기
                         </p>
-                        <figure>
+                        <span>
                             <img src="IMG/바로가기icon.svg" alt="바로가기">
-                        </figure>
-                    </div>
-                </a>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -221,11 +219,9 @@
                 </h6>
                 <a class="more-view fadein fade to-left" href="#">
                     <p>Top20 더보기</p>
-                    <div class="more-view-click">
-                        <figure>
-                            <img src="IMG/right_icon.svg" alt="right_icon">
-                        </figure>
-                    </div>
+                    <span class="more-view-click">
+                        <img src="IMG/right_icon.svg" alt="right_icon">
+                    </span>
                 </a>
             </div>
 
@@ -234,143 +230,150 @@
                     <li class="flip">
                         <div class="card">
                             <a class="front" href="">
-                                <figure>
+                                <span>
                                     <img src="IMG/AI학과.png" alt="AI학과">
-                                </figure>
+                                </span>
                                 <p>AI학과</p>
                             </a>
-                            <a class="back" href="">
-                                <figure>
-                                    <img src="IMG/AI학과icon.svg" alt="AI학과">
-                                </figure>
-                                <div>
-                                    <h8>AI학과</h8>
-                                    <p>Pre-medical course</p>
-                                </div>
-                                <p>
-                                    의학을 전공하기 위한<br>
-                                    기초적인 학문을 배우는 <br> 학과입니다
-                                </p>
-                            </a>
+                            <div class="back">
+                                <a href="#">
+                                    <span>
+                                        <img src="IMG/AI학과icon.svg" alt="AI학과">
+                                    </span>
+                                    <span class="popular-back-title">
+                                        <h8>AI학과</h8>
+                                        <p>Pre-medical course</p>
+                                    </span>
+                                    <p>
+                                        의학을 전공하기 위한<br>
+                                        기초적인 학문을 배우는 <br> 학과입니다
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="flip">
                         <div class="card">
                             <a class="front" href="">
-                                <figure>
+                                <span>
                                     <img src="IMG/컴퓨터학과.png" alt="컴퓨터학과">
-                                </figure>
+                                </span>
                                 <p>컴퓨터학과</p>
                             </a>
-                            <a class="back" href="">
-                                <figure>
-                                    <img src="IMG/컴퓨터학과icon.svg" alt="컴퓨터학과icon">
-                                </figure>
-                                <div>
-                                    <h8>컴퓨터학과</h8>
-                                    <p>Computer Science</p>
-                                </div>
-                                <p>
-                                    프로그래밍, 소프트웨어개발,<br>
-                                    데이터베이스, 인공지능 등의<br>
-                                    분야를 배우는 학과입니다
-                                </p>
-                            </a>
+                            <div class="back">
+                                <a href="#">
+                                    <span>
+                                        <img src="IMG/컴퓨터학과icon.svg" alt="컴퓨터학과">
+                                    </span>
+                                        <h8>컴퓨터학과</h8>
+                                        <p>Computer Science</p>
+                                    </span>
+                                    <p>
+                                        프로그래밍, 소프트웨어개발,<br>
+                                        데이터베이스, 인공지능 등의<br>
+                                        분야를 배우는 학과입니다
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="flip">
                         <div class="card">
                             <a class="front" href="">
-                                <figure>
+                                <span>
                                     <img src="IMG/반도체학과.png" alt="반도체학과">
-                                </figure>
+                                </span>
                                 <p>반도체학과</p>
                             </a>
-                            <a class="back" href="">
-                                <figure>
-                                    <img src="IMG/반도체학과icon.svg" alt="반도체학과icon">
-                                </figure>
-                                <div>
-                                    <h8>반도체학과</h8>
-                                    <p>Semiconductor Engineering</p>
-                                </div>
-                                <p>
-                                    반도체 기술, 반도체 제조,<br>
-                                    회로 설계, 반도체 물리학 등을<br>
-                                    연구하는 학과입니다
-                                </p>
-                            </a>
+                            <div class="back">
+                                <a href="#">
+                                    <span>
+                                        <img src="IMG/반도체학과icon.svg" alt="반도체학과icon">
+                                    </span>
+                                        <h8>반도체학과</h8>
+                                        <p>Semiconductor Engineering</p>
+                                    </span>
+                                    <p>
+                                        반도체 기술, 반도체 제조,<br>
+                                        회로 설계, 반도체 물리학 등을<br>
+                                        연구하는 학과입니다
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="flip">
                         <div class="card">
                             <a class="front" href="">
-                                <figure>
+                                <span>
                                     <img src="IMG/경영학과.png" alt="경영학과">
-                                </figure>
+                                </span>
                                 <p>경영학과</p>
                             </a>
-                            <a class="back" href="">
-                                <figure>
-                                    <img src="IMG/경영학과icon.svg" alt="경영학과icon">
-                                </figure>
-                                <div>
-                                    <h8>경영학과</h8>
-                                    <p>Business Administration</p>
-                                </div>
-                                <p>
-                                    조직 관리, 마케팅, 재무, 회계,<br>
-                                    인사관리, 전략 등 비즈니스 등의<br>
-                                    분야를 배우는 학과입니다
-                                </p>
-                            </a>
+                            <div class="back">
+                                <a href="#">
+                                    <span>
+                                        <img src="IMG/경영학과icon.svg" alt="경영학과icon">
+                                    </span>
+                                        <h8>경영학과</h8>
+                                        <p>Business Administration</p>
+                                    </span>
+                                    <p>
+                                        조직 관리, 마케팅, 재무, 회계,<br>
+                                        인사관리, 전략 등 비즈니스 등의<br>
+                                        분야를 배우는 학과입니다
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="flip">
                         <div class="card">
                             <a class="front" href="">
-                                <figure>
+                                <span>
                                     <img src="IMG/경제학과.png" alt="경제학과">
-                                </figure>
+                                </span>
                                 <p>경제학과</p>
                             </a>
-                            <a class="back" href="">
-                                <figure>
-                                    <img src="IMG/경제학과icon.svg" alt="경제학과icon">
-                                </figure>
-                                <div>
-                                    <h8>경제학과</h8>
-                                    <p>Economics Department</p>
-                                </div>
-                                <p>
-                                    경제시스템, 자원배분, 소비자 <br>
-                                    및 생산자 행동 등 경제 전반에 대한 <br>
-                                    이론과 분석방법을 배우는 학과입니다
-                                </p>
-                            </a>
+                            <div class="back">
+                                <a href="#">
+                                    <span>
+                                        <img src="IMG/경제학과icon.svg" alt="경제학과icon">
+                                    </span>
+                                        <h8>경제학과</h8>
+                                        <p>Economics Department</p>
+                                    </span>
+                                    <p>
+                                        경제시스템, 자원배분, 소비자 <br>
+                                        및 생산자 행동 등 경제 전반에 대한 <br>
+                                        이론과 분석방법을 배우는 학과입니다
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="flip">
                         <div class="card">
                             <a class="front" href="">
-                                <figure>
+                                <span>
                                     <img src="IMG/의예과.png" alt="의예과">
-                                </figure>
-                                <p>의예과</p>
+                                </span>
+                                <p>경제학과</p>
                             </a>
-                            <a class="back" href="">
-                                <figure>
-                                    <img src="IMG/의예과icon.svg" alt="의예과icon">
-                                </figure>
-                                <div>
-                                    <h8>의예과</h8>
-                                    <p>Pre-medical course</p>
-                                </div>
-                                <p>
-                                    의학을 전공하기 위한<br>
-                                    기초적인 학문을 배우는 학과입니다
-                                </p>
-                            </a>
+                            <div class="back">
+                                <a href="#">
+                                    <span>
+                                        <img src="IMG/의예과icon.svg" alt="의예과icon">
+                                    </span>
+                                        <h8>의예과</h8>
+                                        <p>Pre-medical course</p>
+                                    </span>
+                                    <p>
+                                        의학을 전공하기 위한<br>
+                                        기초적인 학문을 배우는 학과입니다
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -589,11 +592,9 @@
                 </div>
                 <a class="more-view fadein fade to-right" href="#">
                     <p>2024 베스트셀러 더보기</p>
-                    <div class="more-view-click">
-                        <figure>
-                            <img src="IMG/right_icon.svg" alt="right_icon">
-                        </figure>
-                    </div>
+                    <span class="more-view-click">
+                        <img src="IMG/right_icon.svg" alt="right_icon">
+                    </span>
                 </a>
             </div>
         </div>
@@ -603,7 +604,7 @@
         <div class="admission-results-page">
             <div class="section-title-zone fadein fade to-bottom">
                 <h3>
-                    Popular academic programs
+                    Admission Results
                 </h3>
                 <h2>
                     대학입학과 관련된 <br>
@@ -612,91 +613,91 @@
             </div>
 
             <ul class="admission-results-contents">
-                <li class="fadein fade to-left">
-                    <a href="#">
-                        <figure>
-                            <img src="IMG/입시결과확인icon.svg" alt="입시결과확인icon">
-                        </figure>
-                        <div class="admission-results-text">
+                <li class="fadein fade to-left content">
+                    <figure class="admission-results-img">
+                        <img src="IMG/입시결과확인icon.svg" alt="입시결과확인icon">
+                    </figure>
+                    <div class="admission-results-text">
+                        <a href="#">
                             <h5>
                                 입시결과확인
                             </h5>
-                            <div class="detail-view">
+                        </a>
+                        <div class="detail-view">
+                            <a href="#">
                                 <p>자세히보기</p>
-                                <div class="detail-view-click">
-                                    <figure>
-                                        <img src="IMG/right_orange.svg" alt="right_icon">
-                                    </figure>
-                                </div>
-                            </div>
+                                <span class="detail-view-click">
+                                    <img src="IMG/right_orange.svg" alt="right_icon">
+                                </sapn>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </li>
                 <li class="vertical-line">
                 </li>
-                <li class="fadein fade to-left">
-                    <a href="#">
-                        <figure>
-                            <img src="IMG/경쟁률icon.svg" alt="경쟁률확인icon">
-                        </figure>
-                        <div class="admission-results-text">
+                <li class="fadein fade to-left content">
+                    <figure class="admission-results-img">
+                        <img src="IMG/경쟁률icon.svg" alt="경쟁률확인icon">
+                    </figure>
+                    <div class="admission-results-text">
+                        <a href="#">
                             <h5>
                                 경쟁률
                             </h5>
-                            <div class="detail-view">
+                        </a>
+                        <div class="detail-view">
+                            <a href="#">
                                 <p>자세히보기</p>
-                                <div class="detail-view-click">
-                                    <figure>
-                                        <img src="IMG/right_orange.svg" alt="right_icon">
-                                    </figure>
-                                </div>
-                            </div>
+                                <span class="detail-view-click">
+                                    <img src="IMG/right_orange.svg" alt="right_icon">
+                                </sapn>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </li>
                 <li class="vertical-line">
                 </li>
-                <li class="fadein fade to-right">
-                    <a href="#">
-                        <figure>
-                            <img src="IMG/면접후기.svg" alt="면접후기icon">
-                        </figure>
-                        <div class="admission-results-text">
+                <li class="fadein fade to-left content">
+                    <figure class="admission-results-img">
+                        <img src="IMG/면접후기.svg" alt="면접후기icon">
+                    </figure>
+                    <div class="admission-results-text">
+                        <a href="#">
                             <h5>
                                 면접후기
                             </h5>
-                            <div class="detail-view">
+                        </a>
+                        <div class="detail-view">
+                            <a href="#">
                                 <p>자세히보기</p>
-                                <div class="detail-view-click">
-                                    <figure>
-                                        <img src="IMG/right_orange.svg" alt="right_icon">
-                                    </figure>
-                                </div>
-                            </div>
+                                <span class="detail-view-click">
+                                    <img src="IMG/right_orange.svg" alt="right_icon">
+                                </sapn>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </li>
                 <li class="vertical-line">
                 </li>
-                <li class="fadein fade to-right">
-                    <a href="#">
-                        <figure>
-                            <img src="IMG/등급컷.svg" alt="등급컷icon">
-                        </figure>
-                        <div class="admission-results-text">
+                <li class="fadein fade to-left content">
+                    <figure class="admission-results-img">
+                        <img src="IMG/등급컷.svg" alt="등급컷icon">
+                    </figure>
+                    <div class="admission-results-text">
+                        <a href="#">
                             <h5>
                                 등급컷
                             </h5>
-                            <div class="detail-view">
+                        </a>
+                        <div class="detail-view">
+                            <a href="#">
                                 <p>자세히보기</p>
-                                <div class="detail-view-click">
-                                    <figure>
-                                        <img src="IMG/right_orange.svg" alt="right_icon">
-                                    </figure>
-                                </div>
-                            </div>
+                                <span class="detail-view-click">
+                                    <img src="IMG/right_orange.svg" alt="right_icon">
+                                </sapn>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </li>
             </ul>
         </div>
