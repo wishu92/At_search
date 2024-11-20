@@ -47,8 +47,19 @@ header {
     background-color: #fff;
     width: 100%;
     border-bottom: 1px solid #ddd;
+    transition: 0.5s;
 }
 /* 메인화면이 100vh가 넘어가서 fixed로 바꿈 */
+
+
+header.hide {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+header.scrolled {
+    background-color: #ffffff;
+}
 
 .header-container {
     width: 100%;
@@ -223,8 +234,20 @@ header {
 
 }
 
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
-    font-size: 75px;
+    font-family: 'InkLipquid';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+    font-size: 90px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -232,7 +255,8 @@ h1 {
     align-items: center;
     gap: 30px;
 
-    font-weight:800;
+    font-weight: 800;
+    text-shadow: 1px 1px 10px #00000080;
 }
 
 .type-text-arr {
@@ -252,6 +276,7 @@ h1 {
     color: var(--accent-color);
     font-size: 75px;
     font-weight: 800;
+    text-shadow: 1px 1px 10px #00000080;
 }
 
 .type-text-underline {
@@ -763,11 +788,3 @@ hr {
     font-size: 16px;
     color: #5c5c5c;
 }
-
-
-
-
-/* 베스트 셀러 두줄로하기
-a 코드 정리하기 (반응형까지 정리)
-헤더부분 js 해보기
- */

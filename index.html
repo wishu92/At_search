@@ -740,6 +740,36 @@
         menuLogin.classList.toggle('active');
         })
 
+
+        const header = document.querySelector('header');
+        const ratio = 300;
+
+        let 이전값 = window.scrollY
+        window.addEventListener('scroll',()=>{
+
+            if(window.scrollY > 이전값 && window.scrollY>ratio){
+                header.classList.add('hide')
+            }else {
+                header.classList.remove('hide')
+            }
+
+
+            이전값 = window.scrollY
+
+            if(window.scrollY > ratio) {
+                header.classList.add('scrolled')
+            }else {
+                header.classList.remove('scrolled')
+
+            }
+
+        })
+
+
+
+
+        
+
     </script>
 </body>
 </html>

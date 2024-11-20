@@ -260,6 +260,11 @@
         display: flex;
     }
 
+    header.scrolled
+    .header-list {
+    display: none;
+    }
+
     .menu-login a {
         width: 100%;
     }
