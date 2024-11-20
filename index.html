@@ -18,15 +18,14 @@
 </head>
 
 <body>
-
     <header>
         <nav class="header-container">
+            <div>
+                <a class="at-search-logo" href="#">
+                    <img src="IMG/Atsearch_logo.svg" alt="atsearch_logo">
+                </a>
+            </div>
             <ul class="header-list">
-                <li>
-                    <a class="at-search-logo" href="#">
-                        <img src="IMG/Atsearch_logo.svg" alt="atsearch_logo">
-                    </a>
-                </li>
                 <li>
                     <a href="#"> 회사소개 </a>
                     <ul class="header-sub-list">
@@ -56,13 +55,15 @@
                         <li> <a href="#">1:1 입시상담</a></li>
                     </ul>
                 </li>
+                <li class="menu-login">
+                    <a href="#"> Login </a>
+                </li>
             </ul>
-            <!-- header부분은 fixed -->
 
             <ul class="header-search">
                 <li>
                     <input class="header-search-box" type="text">
-                    <a href="#">
+                    <a class="search-icon" href="#">
                         <img src="IMG/search_icon.svg" alt="search-icon">
                     </a>
                 </li>
@@ -70,24 +71,10 @@
                     <a href="#"> Login </a>
                 </li>
             </ul>
+            <a class="hamburger-icon" href="#">
+                <img src="IMG/햄버거icon.svg" alt="햄버거">
+            </a>
         </nav>
-        <div class="moblie-header">
-            <ul>
-                <li>
-                    <a class="at-search-logo" href="#">
-                        <img src="IMG/Atsearch_logo.svg" alt="logo">
-                    </a>
-                </li>
-                <li class="login-menu">
-                    <div>
-                        <a href="#">Login</a>
-                    </div>
-                    <a class="hamburger-icon" href="#">
-                        <img src="IMG/햄버거icon.svg" alt="햄버거">
-                    </a>
-                </li>
-            </ul>
-        </div>
     </header>
     <!-- a테그는 인라인테그 - a안에 블록불가 div.figure li등..안됨 -->
 
@@ -742,6 +729,16 @@
     <script>
         const mySlider = document.querySelector('.my-slider');
         createSlider(mySlider, 1, 0, 300, true);
+
+        
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+        const headerList = document.querySelector('.header-list');
+        const menuLogin = document.querySelector('.menu-login');
+
+        hamburgerIcon.addEventListener('click', ()=>{
+        headerList.classList.toggle('active');
+        menuLogin.classList.toggle('active');
+        })
 
     </script>
 </body>
