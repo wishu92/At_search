@@ -370,6 +370,10 @@
         height: 20px;
     }
 
+    .more-view {
+        justify-content: center;
+    }
+
     .admission-results-contents {
         flex-wrap: wrap;
     }
@@ -382,8 +386,6 @@
         width: 200px;
         aspect-ratio: 1;
         margin: 10px 20px;
-        background-color: rgb(247, 247, 247, 0.2);
-        border-radius: 20px;
     }
 
     footer {
@@ -419,8 +421,9 @@
         font-size: 18px;
     }
            
-    .back span{
+    .back span img{
         width: 50px;
+        height: 50px;
     }
       
     .back p {
@@ -432,9 +435,6 @@
         font-size: 18px;
     }
 
-    .more-view {
-        justify-content: center;
-    }
     
 }
 
