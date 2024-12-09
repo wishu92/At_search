@@ -1,17 +1,17 @@
-:root {
-    --text-color: #2E2E2E;
-    --accent-color: #FF6600;
-    --pink-color: #FFEFDD;
-}
-
 body {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-variation-settings:"wdth" 100;
-
+    
     overflow-x: hidden;
+}
+
+:root {
+    --text-color: #2E2E2E;
+    --accent-color: #FF6600;
+    --pink-color: #FFEFDD;
 }
 
 a {
@@ -30,9 +30,6 @@ img {
 
 body > section {
     padding: 0 32px;
-    /* overflow: hidden; */
-    /* fadein 때문에 가로스크로 생기는 이슈로 했으나, sticky가 안되어서
-    취소 하고 각 섹션에 따로 hidden 을 줌 */
 }
 
 .noPadding {
